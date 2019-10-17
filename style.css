@@ -1,0 +1,170 @@
+body {
+    background: rgb(255, 255, 255);
+}
+.wrapper {
+    background: rgb(250, 250, 249);
+    max-width: 960;
+    margin: 0 auto;
+    clear: both;
+}
+
+.wrapper:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+#banner{
+    max-height: 300px;
+    overflow: hidden;
+    margin: 1%;
+    margin-top:48px;
+    position: relative;
+}
+
+#banner h2{
+    position: absolute;
+    top:1%;
+    width: 100%;
+    color: rgb(48, 47, 47);
+    text-align: center;
+    margin:0px;
+}
+
+#banner img{
+    float: left;
+    margin: 0px;
+    
+}
+
+.blue {
+    background: rgba(0, 0, 255, 0.644);
+
+}
+
+.red {
+    background: rgba(255, 0, 0, 0.685);
+}
+
+.green {
+    background: rgba(0, 128, 0, 0.705);
+}
+
+.box {
+    float: right;
+    height: 150px;
+    width: 29%;
+    margin: 1%;
+    padding:1%;
+    position: relative;
+}
+
+.box:nth-child(3){
+    top:5px;
+}
+.box:nth-child(2){
+    top:10px;
+}
+.box:nth-child(1){
+    top:15px;
+}
+
+.boxes{
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.boxes:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content {
+    background: rgba(117, 158, 199, 0.842);
+    margin-top:10px;
+    position: relative;
+}
+
+.content p{
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+    -webkit-column-rule: 1.5px solid rgb(130, 134, 134);
+    text-align: justify;
+    padding: 5px;
+}
+
+section, aside{
+    float:left;
+    width: 46%;
+    padding:1%;
+    margin: 1%;
+    background: rgb(224, 222, 222);
+}
+
+.columns:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav{
+    background:rgb(4, 57, 117);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul{
+    margin:10px;
+}
+
+nav ul:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+nav li {
+    list-style-type: none;
+    margin-right: 10px;
+    color:#fff;
+    float:right;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .content p{
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+
+    section, aside{
+        float:left;
+        width: 96%;
+        padding:1%;
+        margin: 1%;
+        background: rgb(224, 222, 222);
+    }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+      background-color: rgb(14, 178, 233);
+    }
+
+    .content p{
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
